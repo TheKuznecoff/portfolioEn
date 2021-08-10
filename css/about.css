@@ -1,0 +1,144 @@
+.about {
+  margin: 80px 0;
+}
+
+.about__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.about__content {
+  margin-right: 10px;
+}
+
+.about__title {
+  color: #2b2a2c;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.about__subtitle {
+  white-space: nowrap;
+  margin-bottom: 20px;
+  position: relative;
+  left: -10px;
+  color: #dedede;
+  font-size: 92px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.about__text {
+  color: #2d2d2e;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  margin-bottom: 10px;
+}
+
+.about__skills {
+  color: #2b2a2c;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.about__skills-desc {
+  color: #2d2d2e;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+.about__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1200px) {
+  .about {
+    margin: 50px 0;
+  }
+  .about__inner {
+    margin-bottom: 30px;
+  }
+  .about__content {
+    margin: 0;
+  }
+  .about__subtitle {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about {
+    margin: 20px 0;
+  }
+  .about__inner {
+    margin-bottom: 15px;
+  }
+  .about__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__title {
+    text-align: center;
+    font-size: 35px;
+  }
+  .about__subtitle {
+    text-align: center;
+    font-size: 50px;
+    left: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    margin: 5px 0;
+  }
+  .about__photo {
+    display: none;
+  }
+  .about__inner {
+    margin-bottom: 10px;
+  }
+  .about__title {
+    font-size: 20px;
+  }
+  .about__subtitle {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+  }
+  .about__text {
+    font-size: 13px;
+  }
+  .about__skills {
+    font-size: 18px;
+  }
+  .about__skills-desc {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+}

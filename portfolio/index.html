@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <link rel="shortcut icon" href="img/favicon.ico">
+   <title>Portfolio</title>
+</head>
+
+<body>
+
+   <!--Header-->
+
+   <header class="header">
+      <div class="burger">
+         <span class="burger__span"></span>
+      </div>
+      <div class="container">
+         <div class="header__inner">
+            <div class="user">
+               <span class="user__avatar"></span>
+               <div class="user__content">
+                  <div class="user__name">Дмитрий<br>Кузнецов</div>
+                  <div class="user__prof">Front-end Разработчик</div>
+               </div>
+            </div>
+            <nav class="nav">
+               <a class="nav__link" href="#" data-scroll="#works">Мои работы</a>
+               <a class="nav__link" href="#" data-scroll="#about-me">Обо мне</a>
+               <a class="nav__link" href="#" data-modal="#modal-contacts">Контакты</a>
+               <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">Напиши мне</a>
+            </nav>
+         </div>
+      </div>
+   </header>
+
+   <!---Intro-->
+
+   <section class="intro">
+      <div class="container">
+         <div class="intro__inner">
+            <div class="intro__content">
+               <h2 class="intro__subtitle">Привет, я</h2>
+               <h1 class="intro__title">Дмитрий Кузнецов</h1>
+               <div class="intro__text">Front-end Разработчик</div>
+               <div class="social">
+                  <a class="social__link" href="https://vk.com/dimakuznecoff" target="blank">
+                     <img src="img/vk.svg" alt="" width="41">
+                  </a>
+                  <a class="social__link" href="https://t.me/thekuznecoff" target="blank">
+                     <img src="img//telegram.svg" alt="" width="41">
+                  </a>
+                  <a class="social__link" href="https://github.com/TheKuznecoff" target="blank">
+                     <img src="img/github.svg" alt="" width="41">
+                  </a>
+                  <a class="social__link" href="tel:89370925101">
+                     <img src="img/phone-call.svg" alt="" width="41">
+                  </a>
+                  <a class="social__link" href="mailto:thekuznecoff070@gmail.com">
+                     <img src="img/gmail.svg" alt="" width="41">
+                  </a>
+               </div>
+               <!--<a class="btn" href="#" data-modal="#modal_resume">Резюме</a>-->
+               <button class="btn" type="button" data-modal="#modal_hire_me">Напиши мне</button>
+            </div>
+            <div class="inner__photo">
+               <img class="inner__img" src="img/888.jpg" alt="">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!---Works-->
+
+   <section class="works" id="works">
+      <div class="container">
+         <h3 class="works__title">Мои работы:</h3>
+         <div class="portfolio">
+            <div class="portfolio__col">
+               <div class="portfolio__col-work">
+                  <div class="portfolio__col-img">
+                     <a href="https://thekuznecoff.github.io/Fitness-Pro/" target="_blank">
+                        <img class="portfolio__img" src="img/Слой 1.jpg" alt="Слой 1.jpg">
+                     </a>
+                  </div>
+                  <div class="portfolio__content">
+                     <div class="portfolio__cat">адаптивный</div>
+                     <div class="portfolio__title">
+                        Fitness-Pro
+                        <time class="portfolio__date" datetime="2021-01-20 8:00">2021</time>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="portfolio__col">
+               <div class="portfolio__col-work">
+                  <div class="portfolio__col-img">
+                     <a href="https://thekuznecoff.github.io/sublime/" target="_blank">
+                        <img class="portfolio__img" src="img/sublime1.jpg" alt="">
+                     </a>
+                  </div>
+                  <div class="portfolio__content">
+                     <div class="portfolio__cat">адаптивный</div>
+                     <div class="portfolio__title">
+                        макет игрового портала
+                        <time class="portfolio__date" datetime="2021-01-20 8:00">2020</time>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="portfolio__col">
+               <div class="portfolio__col-work">
+                  <div class="portfolio__col-img">
+                     <a href="https://thekuznecoff.github.io/CarStore/" target="_blank">
+                        <img class="portfolio__img" src="img/CarStore.jpg" alt="">
+                     </a>
+                  </div>
+                  <div class="portfolio__content">
+                     <div class="portfolio__cat">Без адаптива</div>
+                     <div class="portfolio__title">
+                        car store
+                        <time class="portfolio__date" datetime="2021-01-20 8:00">2021</time>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="portfolio__col">
+               <div class="portfolio__col-work">
+                  <div class="portfolio__col-img">
+                     <a href="https://thekuznecoff.github.io/Phototime/" target="_blank">
+                        <img class="portfolio__img" src="img/phototime.jpg" alt="">
+                     </a>
+                  </div>
+                  <div class="portfolio__content">
+                     <div class="portfolio__cat">Без адаптива</div>
+                     <div class="portfolio__title">
+                        Photo time
+                        <time class="portfolio__date" datetime="2021-01-20 8:00">2021</time>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="portfolio__col">
+               <div class="portfolio__col-work">
+                  <div class="portfolio__col-img">
+                     <a href="https://thekuznecoff.github.io/Keksby/" target="_blank">
+                        <img class="portfolio__img" src="img/keksby.jpg" alt="">
+                     </a>
+                  </div>
+                  <div class="portfolio__content">
+                     <div class="portfolio__cat">Без адаптива</div>
+                     <div class="portfolio__title">
+                        Кошачий рай
+                        <time class="portfolio__date" datetime="2021-01-20 8:00">2021</time>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!---About-->
+
+   <section class="about" id="about-me">
+      <div class="container">
+         <div class="about__inner">
+            <div class="about__content">
+               <h4 class="about__title">Обо мне</h4>
+               <h5 class="about__subtitle">Кто я такой</h5>
+               <div class="about__text">
+                  <p>Я начинающий Фронтенд разработчик, больше года учебной практики.</p>
+                  <p>Не плохо верстаю, могу в адаптивную резиновую верстку, практикую пиксель перфект.</p>
+                  <p>Работая со мной вы получаете полностью готовый проект, будь то верстка или сайт под ключ. Всегда
+                     довожу проект до конца и поддерживаю в работе.</p>
+                  <p>Моя цель - предоставить лучшую услугу на рынке!</p>
+               </div>
+               <div class="about__skills">Мои навыки:</div>
+               <div class="about__skills-desc">- HTML (HTML5), CSS (CSS3), JavaScript, SASS, Flexbox, БЭМ.</div>
+               <div class="progress-bar">
+                  <div class="progress-bar__item">
+                     <div class="progress-bar__left">
+                        <div class="progress-bar__title">HTML</div>
+                     </div>
+                     <div class="progress-bar__right">
+                        <div class="progress-bar__bar">
+                           <div class="progress-bar__progress" style="width: 80%;"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="progress-bar__item">
+                     <div class="progress-bar__left">
+                        <div class="progress-bar__title">CSS</div>
+                     </div>
+                     <div class="progress-bar__right">
+                        <div class="progress-bar__bar">
+                           <div class="progress-bar__progress" style="width: 80%;"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="progress-bar__item">
+                     <div class="progress-bar__left">
+                        <div class="progress-bar__title">JavaScript</div>
+                     </div>
+                     <div class="progress-bar__right">
+                        <div class="progress-bar__bar">
+                           <div class="progress-bar__progress" style="width: 50%;"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div><!-- /.progress-bar -->
+               <h6 class="timeline__title">Род занятий:</h6>
+               <div class="timeline__text">
+                  <p>- Вёрстка кроссбраузерная, валидная, адаптивная. Только чистый и понятный код.</p>
+                  <p>- Верстаю из PSD, Sketch, Figma, Zeplin, Adobe XD</p>
+                  <p>- Адаптивность, отзывчивость (responsive), резина</p>
+                  <p>- CSS3\JS анимация сайтов.</p>
+                  <p>- Профессиональное обслуживание, наполнение, поддержка сайтов и интернет-магазинов.</p>
+               </div>
+
+               <button class="btn" type="button" data-modal="#modal_hire_me">Напиши мне</button>
+            </div>
+            <div class="about__photo">
+               <img class="about__img" src="img/free.jpg" alt="">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!---Footer-->
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__inner">
+            <div class="footer__items">
+               <div class="footer__social">
+                  <a class="" href="https://vk.com/dimakuznecoff" target="blank">
+                     <img src="img/vk.svg" alt="" width="24">
+                  </a>
+                  <a class="" href="https://t.me/thekuznecoff" target="blank">
+                     <img src="img//telegram.svg" alt="" width="24">
+                  </a>
+                  <a class="" href="https://github.com/TheKuznecoff" target="blank">
+                     <img src="img/github.svg" alt="" width="24">
+                  </a>
+                  <a class="" href="tel:89370925101">
+                     <img src="img/phone-call.svg" alt="" width="24">
+                  </a>
+                  <a class="" href="mailto:thekuznecoff070@gmail.com">
+                     <img src="img/gmail.svg" alt="" width="24">
+                  </a>
+               </div>
+            </div>
+            <nav class="footer__nav">
+               <a class="footer__nav-link" href="" data-scroll="#works">Работа</a>
+               <a class="footer__nav-link" href="" data-scroll="#about-me">Обо мне</a>
+               <a class="footer__nav-link" href="" data-modal="#modal-contacts">Контакты</a>
+               <a class="footer__nav-link footer__nav-link--btn" href="#" data-modal="#modal_hire_me">Напиши мне</a>
+            </nav>
+         </div>
+      </div>
+   </footer>
+
+   <!---Modals-->
+
+   <div class="modal" id="modal_hire_me">
+      <div class="modal__dialog modal__dialog--sm">
+         <button class="modal__close" type="button" data-close>
+            <img src="img/close.svg" alt="Close" width="34">
+         </button>
+         <div class="contact">
+            <div class="contact__left">
+               <div class="contact__left-title">Давайте поговорим!</div>
+               <div class="contact__left-subtitle">напишите мне в телеграм</div>
+               <a class="social__link social__link__contact-left" href="https://t.me/thekuznecoff" target="blank">
+                  <img src="img//telegram.svg" alt="" width="350">
+               </a>
+               <!--<form class="form" action="" method="post">
+						<div class="form__group">
+							<label class="form__label" for="input-email">Adress e-mail</label>
+							<input class="form__input" name="input-email" type="text" id="input-email">
+						</div>
+						<div class="form__group">
+							<label class="form__label" for="input-email">Текст</label>
+							<textarea class="form__textarea" name="input-email" id="input-text"></textarea>
+						</div>
+						<div class="modal__btn modal__btn--form">
+							<a class="btn" href="#">Отправить</a>
+						</div>
+					</form>-->
+            </div>
+            <div class="contact__right">
+               <img class="about__img" src="img/callback.png" alt="">
+            </div>
+         </div><!-- /.contact -->
+      </div><!-- /.modal__dialog -->
+   </div>
+
+   <div class="modal" id="modal-contacts">
+      <div class="modal__dialog modal__dialog--ss">
+         <button class="modal__close" type="button" data-close>
+            <img src="img/close.svg" alt="Close" width="34">
+         </button>
+         <div class="modal__contact">
+            <div class="modal__contacts-title">Контакты</div>
+            <div class="footer__social footer__social--ss">
+               <a class="" href="https://vk.com/dimakuznecoff" target="blank">
+                  <img src="img/vk.svg" alt="" width="50">
+                  https://vk.com/dimakuznecoff
+               </a>
+               <a class="" href="https://t.me/thekuznecoff" target="blank">
+                  <img src="img//telegram.svg" alt="" width="50">
+                  https://t.me/thekuznecoff
+               </a>
+               <a class="" href="https://github.com/TheKuznecoff" target="blank">
+                  <img src="img/github.svg" alt="" width="50">
+                  https://github.com/TheKuznecoff
+               </a>
+               <a class="" href="tel:89370925101">
+                  <img src="img/phone-call.svg" alt="" width="50">
+                  +7-938-092-51-01
+               </a>
+               <a class="" href="mailto:thekuznecoff070@gmail.com">
+                  <img src="img/gmail.svg" alt="" width="50">
+                  email:thekuznecoff070@gmail.com
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- JS -->
+
+   <script src="js/app.js"></script>
+</body>
+
+</html>

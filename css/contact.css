@@ -1,0 +1,112 @@
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__left {
+  width: 57%;
+  padding: 30px;
+}
+
+.contact__left-title {
+  margin-bottom: 5px;
+  font-size: 45px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contact__left-subtitle {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact__info {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  color: black;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  cursor: pointer;
+}
+
+.contact__social img {
+  margin-right: 10px;
+}
+
+.contact__social:hover {
+  color: #8d8d8e;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.contact__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 53%;
+}
+
+.social__link__contact-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .contact {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact__left {
+    width: 100%;
+    padding: 20px;
+  }
+  .contact__left-title {
+    max-width: 300px;
+    font-size: 25px;
+    margin: 0 auto;
+  }
+  .contact__left-subtitle {
+    font-size: 12px;
+  }
+  .social__link__contact-left img {
+    width: 200px;
+  }
+}

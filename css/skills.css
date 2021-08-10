@@ -1,0 +1,68 @@
+.about__slills-content {
+  position: relative;
+  background-color: #ff5757;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.about__skills {
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+  max-width: 700px;
+}
+
+.about__skills-title {
+  color: #2b2a2c;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.skill__name {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #2b2a2c;
+  margin: 20px 0;
+}
+
+.skill__bar {
+  height: 20px;
+  background-color: #cacaca;
+  border-radius: 8px;
+}
+
+.skill__per {
+  position: relative;
+  height: 20px;
+  background-color: #669cd6;
+  border-radius: 8px;
+  width: 0;
+  -webkit-transition: 2s linear;
+  transition: 2s linear;
+}
+
+.skill__per .value {
+  position: absolute;
+  background-color: #fff;
+  padding: 4px 6px;
+  font-size: 12px;
+  color: #000;
+  border-radius: 4px;
+  right: 0;
+  top: -35px;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  opacity: 0;
+  -webkit-transition: 4s ease;
+  transition: 4s ease;
+}

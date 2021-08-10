@@ -1,0 +1,58 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__link {
+  position: relative;
+  color: #2b2a2c;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-left: 30px;
+}
+
+.nav__link:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  z-index: 1;
+  width: 0;
+  height: 2px;
+  background-color: #2b2a2c;
+  -webkit-transition: width 0.2s linear;
+  transition: width 0.2s linear;
+}
+
+.nav__link--btn {
+  padding: 10px 30px;
+  border: 2px solid #2b2a2c;
+  border-radius: 20px;
+  -webkit-transition: background-color 0.2s linear, color 0.2s linear, -webkit-box-shadow 0.2s linear;
+  transition: background-color 0.2s linear, color 0.2s linear, -webkit-box-shadow 0.2s linear;
+  transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear;
+  transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0095FE), color-stop(51%, #13EBC9), to(#0095FE));
+  background-image: linear-gradient(to right, #0095FE 0%, #13EBC9 51%, #0095FE 100%);
+  background-size: 200% auto;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.nav__link--btn:hover {
+  background-position: right center;
+  -webkit-box-shadow: 2px 2px 10px black;
+          box-shadow: 2px 2px 10px black;
+  color: #fff;
+}
+
+.nav__link:hover:not(.nav__link--btn):after {
+  width: 100%;
+}
